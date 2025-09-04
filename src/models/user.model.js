@@ -20,7 +20,7 @@ export const UserModel = sequelize.define('article', {
         allowNull: false
     },
     role:{
-        type: DataTypes.ENUM[ 'user', 'admin' ],
+        type: DataTypes.ENUM ('user', 'admin'),
         defaultValue: 'user'
     },
      
@@ -30,3 +30,4 @@ export const UserModel = sequelize.define('article', {
     deletedAt: 'deleted_at',
     paranoid: true
 });
+

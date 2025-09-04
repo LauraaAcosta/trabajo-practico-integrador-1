@@ -10,13 +10,13 @@ export const articleTagModel = sequelize.define('articleTag', {
     article_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        references: { model: 'ArticleModel', key: 'id' },
+        references: { model: 'articleModels', key: 'id' },
         onDelete: 'CASCADE'
     },
     tag_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        references: { model: 'TagModel', key: 'id' },
+        references: { model: 'tagModels', key: 'id' },
         onDelete: 'CASCADE'
     },
 },{
